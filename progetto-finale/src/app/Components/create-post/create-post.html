@@ -1,1 +1,35 @@
-<p>create-post works!</p>
+<div class="createpost">
+  <h3>CREA POST</h3>
+
+  <form (submit)="onSubmit($event)">
+    <input
+      placeholder="inserisci un titolo"
+      type="text"
+      [field]="postForm.title"
+    />
+    @if(postForm.title().invalid() && postForm.title().touched()){
+    <span class="error">
+      @for (error of postForm.title().errors(); track error.kind) {
+      <span>{{error.message}}</span>
+      }
+    </span>
+    }
+
+    <input
+      placeholder="inserisci una caption"
+      type="text"
+      [field]="postForm.caption"
+    />
+    @if(postForm.caption().invalid() && postForm.caption().touched()){
+    <span class="error">
+      @for (error of postForm.caption().errors(); track error.kind) {
+      <span>{{error.message}}</span>
+      }
+    </span>
+    }
+
+    <button type="submit" [disabled]="postForm().invalid()">
+      Pubblica Post
+    </button>
+  </form>
+</div>

@@ -20,6 +20,7 @@ export const routes: Routes = [
           import('./Components/my-posts/my-posts').then((c) => c.MyPosts),
       },
       { path: 'createpost', component: CreatePost, title: 'create' },
+      { path: '**', redirectTo: 'feed', title: 'feed' },
     ],
   },
   { path: 'post/:id', component: PostDetail, pathMatch: 'full' },

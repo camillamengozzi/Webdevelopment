@@ -18,10 +18,10 @@ export class MyPosts {
   );
 
   deletePost(postId: number) {
-    const posts = this.userResource.value();
+    const posts = this.userResource.value(); //recupero la lista dei posts
     if (!posts) {
-      return;
+      return; //se non ci sono i post non viene eseguita nessuna instruzione
     }
-    this.userResource.set(posts.filter((p) => p.id !== postId));
+    this.userResource.set(posts.filter((p) => p.id !== postId)); //filter scorre tutti i post
   }
 }

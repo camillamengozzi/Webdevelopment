@@ -34,3 +34,8 @@ export interface Company {
   catchPhrase: string;
   bs: string;
 }
+
+export interface IPostData {
+  title: string;
+  caption: string;
+}
