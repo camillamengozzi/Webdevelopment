@@ -9,14 +9,14 @@ header{
     width: 100%;
     margin: 0 auto;
     height: 4rem;
-    background: linear-gradient(to bottom, #0e0e0e, #3b3b3b);
+    background: linear-gradient(to bottom, #595959, #9f9f9f7f);
      
 }
 
 
 h1 {
   font-size: 3rem;
-  font-weight: 400;
+  font-weight: 500;
   background: linear-gradient(90deg,#9bffb0, #20fcf9);
   
     /* background: linear-gradient(90deg,var(--accent-green),var(--accent-blue)); */
@@ -26,7 +26,7 @@ h1 {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
 }
 
 .profile span, button {
@@ -37,9 +37,12 @@ h1 {
 }
 
 .profile button {
+  /* BOTTONE LOGOUT */
     margin-left: 15px;
         transition: color 0.3s ease;
         border-radius: 15px;
+        background-color: #424242;
+        border-color: #e3e3e3;
         
 
       &:hover {
@@ -54,7 +57,7 @@ h1 {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    color: #3f3f3f;
+    /* color: #3f3f3f; */
 }
 
 
