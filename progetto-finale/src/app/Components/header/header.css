@@ -4,20 +4,25 @@ header{
     justify-content: space-between;
     align-items: center;
      padding: 2.5rem 2rem;
-    background-color: #cbe2f8;
+   
     color: white;   
     width: 100%;
     margin: 0 auto;
     height: 4rem;
-     border-bottom: 1px solid #a6cbee;
+    background: linear-gradient(to bottom, #0e0e0e, #3b3b3b);
      
 }
 
 
 h1 {
   font-size: 3rem;
-  font-weight: 900;
-  background: linear-gradient(90deg, #1929ff, #ac48ff);
+  font-weight: 400;
+  background: linear-gradient(90deg,#9bffb0, #20fcf9);
+  
+    /* background: linear-gradient(90deg,var(--accent-green),var(--accent-blue)); */
+  
+
+
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -26,18 +31,19 @@ h1 {
 
 .profile span, button {
     text-decoration: none;
-    color: #252525;
+    color: #ffffff;
     font-size: large;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .profile button {
     margin-left: 15px;
         transition: color 0.3s ease;
+        border-radius: 15px;
         
 
       &:hover {
-        background-color: #1137a1; 
+        background-color: #7dcbb5; 
         
 
       }

@@ -1,5 +1,6 @@
 .dashboard{
-background-color: rgb(255, 255, 255);
+background-color: rgb(38, 38, 38);
+height: 100vh;
 display: grid;
 grid-template-areas:"header header"
                     "aside main";
@@ -34,9 +35,9 @@ aside{
                a {
                 text-decoration: none;
                 margin-bottom: 2em;
-                color: #3538d4;
-                font-weight: 700;
-                border-bottom: 1px solid rgb(192, 192, 192);
+                color: #6af1e1;
+                font-weight: 600;
+                /* border-bottom: 1px solid rgb(192, 192, 192); */
                 padding-bottom: 5px;
               
           
@@ -50,7 +51,7 @@ aside{
 }
 
 aside nav a:hover {
-    color: rgb(155, 90, 240);
+    color: rgb(255, 255, 255);
 }
 
 /* .profile-link{
@@ -79,8 +80,9 @@ aside nav a:hover {
 
   main {
     grid-area: main;
-    background-color: #f8f9fa;
+    /* background-color: #f8f9fa; */
     margin: 2rem;
     height: auto;
-    border: 1px solid rgb(226, 226, 226);
+    /* border: 1px solid rgba(226, 226, 226, 0.327);
+    border-radius: 8px; */
   }

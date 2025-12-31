@@ -2,21 +2,33 @@
 .loginContainer{
     
     text-align: center;
-    margin-top: 200px;
+   padding-top: 200px;
+    background-color: rgb(27, 27, 27);
+    height: 100vh;
+    width: 100%;
 }
 
 button{
     margin-top: 20px;
+    border-radius: 15px;
+    font-size: large;
+    color: rgb(214, 214, 214);
+     
+        transition: color 0.3s ease;
+     &:hover {
+        background-color: #7dcbb5; 
+        
+
+      }
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 4rem;
   display: inline-block;
-  font-weight: 900;
-  background: linear-gradient(90deg, #1929ff, #ac48ff);
+  font-weight: 600;
+  background: linear-gradient(90deg,#9bffb0, #20fcf9);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   letter-spacing: 1px;
-
 }
