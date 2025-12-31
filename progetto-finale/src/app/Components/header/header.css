@@ -20,8 +20,6 @@ h1 {
   background: linear-gradient(90deg,#9bffb0, #20fcf9);
   
     /* background: linear-gradient(90deg,var(--accent-green),var(--accent-blue)); */
-  
-
 
   background-clip: text;
   -webkit-background-clip: text;
